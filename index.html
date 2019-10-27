@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tripupp</title>
+	<link rel="stylesheet" href="tripupp.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/e692ca75d8.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<style>
+		
+	</style>
+	<script src="./tripupp.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="row" id="logo">
+				<div class="col-md-10">
+					<p><span>T</span>ripupp</p>
+				</div>
+				<div class="col-md-2" id="user_drop">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+				</div>	
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1">
+					<p id="best">BEST</p>
+				</div>
+				<div class="col-md-10" id="b_image">
+						<ul id="nav1" class="nav nav-pills">
+							<li role="presentation"><a href="#">Getways<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></li>														
+							<li role="presentation"><a href="#">Destinations<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></li>
+							<li role="presentation"><a href="#">HolidayTheme<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></li>
+							<li role="presentation"><a href="#">Campinion<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></li>
+						</ul>
+						<ul id="nav2" class="nav nav-pills">
+								<li role="presentation"><a href="#">Package</a></li>
+								<li role="presentation"><a href="#">Hotel</a></li>
+								<li role="presentation"><a href="#">Flight</a></li>
+								<li role="presentation"><a href="#">Visa</a></li>
+						</ul><br>
+					<p id="search_heading">Planning your Holiday </p>
+					<p id="search_heading2">Find travell packages from sellere across destination</p>
+					<form action="" id="explore">
+						<div class='row'>
+							<div class='col-md-2'></div>
+							<div class="col-md-8">
+									<div class='row' id="form">
+											<div class="col-md-3">
+												<select name="Enter_city" id="">
+													<option value="">Enter city</option>
+													<option value="Lucknow">Lucknow</option>
+													<option value="Rachi">Rachi</option>
+													<option value="Mumbai">Mumbai</option>
+												</select>
+											</div>
+											<div class='col-md-1'>
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+											</div>
+											<div class='col-md-2'><input placeholder="checkout"></div>
+											<div  class="col-md-1">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+											</div>
+											<div class='col-md-2'><input placeholder="checkout"></div>
+											<div class="col-md-1 explore_color">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+											<div class='col-md-2 explore_color'><input type="submit" value="Explore"></div>
+										</div>
+							</div>
+							<div class='col-md-2'></div>
+						</div>					
+					</form>
+				</div>
+				<div id="bubble" class="col-md-1">
+						<span class="dot"></span><br>
+						<span class="dot"></span><br>
+						<span class="dot"></span><br>
+						<span class="dot"></span><br>
+						<span class="dot"></span><br>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- Details of Hotel Hotel in Goa  -->
+			<div id="goa_hotel" class="row">
+					<div id="goa_o" class="col-md-1" >
+						<i class="fa fa-circle-o" aria-hidden="true"></i>
+					</div>
+					<div id="goa_heading" class="col-md-10">
+						<p id="p1"> Hotels in Goa </p>
+						<p id="p2">Best Forever</p>
+						<img src="img/heart_aroplane.jpg" alt="">
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			<!-- Display hotel images deatail and star -->
+			<div id="hotel_detail" class='row'>
+				<div class="col-md-12">
+					<h3>Best hotel for you</h3>
+					<button class="explore_me" value="Explore more"> Explore more</button>
+				</div>
+			</div>
+			<div id="image_display1" class="row">
+				<div class='col-md-1'>
+					<h1>POPULAR</h1>
+				</div>
+				<div id="image1" class='col-md-3'>
+					<div class="at_image_text">
+						<a>City Hotel Paris</a>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<h6>Top best forever</h6>
+						<h4>RS 25000</h4>
+						<h5>(4k review)</h5>
+					</div>
+				</div>
+				<div id="image2" class='col-md-3'>
+					<div class="at_image_text">
+						<a>London famous Hotel</a>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<h6>Top best forever for Couples</h6>
+						<h4>RS 25000</h4>
+						<h5>(4k review)</h5>
+					</div>
+				</div>
+				<div id="image3" class='col-md-3'>
+					<div class="at_image_text">
+						<a>London famous Hotel</a>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<h6>Top best forever for Couples</h6>
+						<h4>RS 25000</h4>
+						<h5>(4k review)</h5>
+					</div>
+				</div>
+				<div class='col-md-2'>
+				</div>
+			</div>
+			<div id="image_display2" class="row">
+				<div id="image4" class="col-md-4">
+					<div class="at_image_text">
+						<a>Himalaya Paro Hotel</a>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<h6>Top best forever for Couples</h6>
+						<h4>RS 25000</h4>
+						<h5>(4k review)</h5>
+					</div>
+				</div>
+				<div id="image5" class="col-md-4">
+					<div class="at_image_text">
+						<a>Himalaya Paro Hotel</a>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<h6>Top best forever for Couples</h6>
+						<h4>RS 25000</h4>
+						<h5>(4k review)</h5>
+				</div>
+				<div id="image6" class="col-md-4">
+					<div class="at_image_text">
+						<a>Mitra Thailand Hotel</a>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<h6>Top best forever for Couples</h6>
+						<h4>RS 25000</h4>
+						<h5>(4k review)</h5>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="international" class="col-md-12">
+					<h2>International Hotels</h2>
+					<h5>Let's make world Tour </h5>
+					<button class="explore_me" value="Explore more"> Explore more</button>
+				</div>
+			</div>
+			<!-- carousel start here -->
+			<div id="carousel_item" class="row">
+				<img id="carousel_item1" src="img/c_img1.jpg" alt="">
+				<img id="carousel_item2" src="img/c_img2.jpg" alt="">
+				<img id="carousel_item3" src="img/c_img3.jpg" alt="">
+				<img id="carousel_item4" src="img/c_img4.jpg" alt="">
+				<img id="carousel_item5" src="img/c_img5.jpg" alt="">
+				<img id="carousel_item6" src="img/c_img6.jpg" alt="">
+				<img id="carousel_item7" src="img/c_img7.jpg" alt="">
+				<div id="location1" class="carousel_text">
+					<a href="" id="t1">The Uper House</a>
+					<span id="t2">hongkong</span>
+					<i class="fa fa-map-marker"></i>
+					<span id="t3">Rs7000pd/n</span>
+				</div>
+				<div id="location2" class="carousel_text">
+					<a href="" id="t1">Rosewood</a>
+					<span id="t2">mexico</span>
+					<i class="fa fa-map-marker"></i>
+					<span id="t3">Rs9000pd/n</span>
+				</div>
+				<div id="location3" class="carousel_text">
+					<a href="" id="t1">The Obaroi</a>
+					<span id="t2">mauntins</span>
+					<i class="fa fa-map-marker"></i>
+					<span id="t3">Rs9000pd/n</span>
+				</div>
+				<div id="location4" class="carousel_text">
+					<a href="" id="t1">Taj Mahal</a>
+					<span id="t2">India</span>
+					<i class="fa fa-map-marker"></i>
+					<span id="t3">Rs7000pd/n</span>
+				</div>
+				<div id="location5" class="carousel_text">
+					<a href="" id="t1">Riad</a>
+					<span id="t2">morocco</span>
+					<i class="fa fa-map-marker"></i>
+					<span id="t3">Rs10000pd/n</span>
+				</div>
+				<div id="location6" class="carousel_text">
+					<a href="" id="t1">Baros</a>
+					<span id="t2">maldives</span>
+					<i class="fa fa-map-marker"></i>
+					<span id="t3">Rs7000pd/n</span>
+				</div>
+				<div id="location7" class="carousel_text">
+					<a href="" id="t1">Komaneka</a>
+					<span id="t2">Indonessia</span>
+					<i class="fa fa-map-marker"></i>
+					<span id="t3">Rs7000pd/n</span>
+				</div>
+				<p>BEST</p>
+				<h2>FOREVER</h2>
+				<h5>Cool</h5>
+			</div>
+			
+			<!-- carousel end here -->
+		</div>
+		<!-- container for logo of tripupp and heading why tripupp -->
+		<div class="container" id="why_cont">
+			<div class="row" id="why">
+				<div class="col-md-2" id="why_h3">
+					<h3>Why Tripupp ?</h3>
+				</div>
+				<div class="col-md-10"></div>
+			</div>
+			<div class="row" id="why_row">
+				<div class="col-md-3">
+					<i class="fa fa-pencil"></i>
+					<p> 100% customizable</p>
+				</div>
+				<div class="col-md-3">
+					<i class="fab fa-cc-visa"></i>
+					<p> 100% safe and secure</p>
+				</div>
+				<div class="col-md-3">
+					<i class="fa fa-lock"></i>
+					<p>safe and secure payment</p>
+				</div>
+				<div class="col-md-3">
+					<img src="img/customer.jpg">
+					<p>24*7 expert availabe on trip</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="mumbai_section">
+		<div class="container" id="mumbai_hotel_cont">
+			<div class="row" id="mumbai_hotel_carousel">
+				<div class="col-md-3"></div>
+					<p id="mum_head">Hotel in Mumbai</p><br>
+					<p id="mum_p"> Top Best forever</p>
+				<div class="col-md-9"></div>
+			</div>
+			<div class="row">
+					<div class="col-md-3" id="hotel_present">
+						<p>We presents top hotel for you</p>
+					</div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3" style="float: right;margin:-14px -60px 0 0;">
+						<button class="explore_me" value="Explore more"> Explore more</button>
+					</div>
+			</div>
+		</div>
+			<div class="container" id="carous">
+				<div class="row">
+					<div class="col-xs-11 col-md-10 col-centered">
+			
+						<div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="carousel-col">
+										
+										<div class="block img-responsive">
+												<img src="img/carous_1.jpg" style="height:280px; width:230px;">
+												
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-col">
+										<div class="block img-responsive">
+												<img src="img/carous_2.jpg" style="height:280px; width:230px;">
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-col">
+										<div class="block img-responsive">
+												<img src="img/carous_3.jpg" style="height:280px; width:230px;">
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-col">
+										<div class="block img-responsive">
+												<img src="img/carous_4.jpg" style="height:280px; width:230px;">
+										</div>
+									</div>
+								</div>
+								<div class="item">
+										<div class="carousel-col">
+											<div class="block img-responsive">
+													<img src="img/carous_5.jpg" style="height:280px; width:230px;">
+											</div>
+										</div>
+									</div>
+									<div class="item">
+											<div class="carousel-col">
+												<div class="block img-responsive">
+														<img src="img/carous_6.jpg" style="height:280px; width:230px;">
+												</div>
+											</div>
+										</div>
+							</div>
+			
+							<!-- Controls -->
+							<div class="left carousel-control">
+								<a href="#carousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</div>
+							<div class="right carousel-control">
+								<a href="#carousel" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+				<div class="row" style="position: relative;margin-top:40px;">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6"></div>
+								<div class="col-md-6" style="float:right;border-bottom:2px solid red;margin-right:20px;">
+										<h1 style="float: right;">Hotel</h1>
+										<p style="float: right;">We presents top hotel for you</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class='col-md-6' style="border-left:4px solid red;padding:10px;">
+							<div class='row'>
+								<div class='col-md-6' style="float:left;border-top:2px solid red;margin-left:20px;">
+									<h1>In Delhi </h1>
+									<p>Let's make Delhi tour</p>
+								</div>
+								<div class="col-md-6"></div>
+							</div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-xs-11 col-md-10 col-centered">
+				
+							<div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="carousel-col">
+											
+											<div class="block img-responsive">
+													<img src="img/carous_1.jpg" style="height:280px; width:230px;">
+													
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="carousel-col">
+											<div class="block img-responsive">
+													<img src="img/carous_2.jpg" style="height:280px; width:230px;">
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="carousel-col">
+											<div class="block img-responsive">
+													<img src="img/carous_3.jpg" style="height:280px; width:230px;">
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="carousel-col">
+											<div class="block img-responsive">
+													<img src="img/carous_4.jpg" style="height:280px; width:230px;">
+											</div>
+										</div>
+									</div>
+									<div class="item">
+											<div class="carousel-col">
+												<div class="block img-responsive">
+														<img src="img/carous_5.jpg" style="height:280px; width:230px;">
+												</div>
+											</div>
+										</div>
+										<div class="item">
+												<div class="carousel-col">
+													<div class="block img-responsive">
+															<img src="img/carous_6.jpg" style="height:280px; width:230px;">
+													</div>
+												</div>
+											</div>
+								</div>
+				
+								<!-- Controls -->
+								<div class="left carousel-control">
+									<a href="#carousel" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+								</div>
+								<div class="right carousel-control">
+									<a href="#carousel" role="button" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+				
+						</div>
+					</div>
+					<div class="row" style="position: relative;margin-top:40px;">
+						<div class="col-md-4" style="border-bottom: 1px solid red;position:relative;top:100px;left:130px;">
+							
+						</div>
+						<div class="col-md-4" style="border-left:3px solid red;">
+								<h3 style="position: relative;top:20px;left:20px;">Hotel in Bangalore</h3>
+								<p style="position: relative;top:35px;left:120px;">We presents top hotel for you</p>	
+						</div>
+						<div class="col-md-4" style="border-bottom: 1px solid red; position:relative;right:220px;">
+						</div>							
+					</div>
+					<div class="row" style="margin-top: 50px;">
+							<div class="col-xs-11 col-md-10 col-centered">
+					
+								<div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+									<div class="carousel-inner">
+										<div class="item active">
+											<div class="carousel-col">
+												
+												<div class="block img-responsive">
+														<img src="img/carous_1.jpg" style="height:280px; width:230px;">
+														
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="carousel-col">
+												<div class="block img-responsive">
+														<img src="img/carous_2.jpg" style="height:280px; width:230px;">
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="carousel-col">
+												<div class="block img-responsive">
+														<img src="img/carous_3.jpg" style="height:280px; width:230px;">
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="carousel-col">
+												<div class="block img-responsive">
+														<img src="img/carous_4.jpg" style="height:280px; width:230px;">
+												</div>
+											</div>
+										</div>
+										<div class="item">
+												<div class="carousel-col">
+													<div class="block img-responsive">
+															<img src="img/carous_5.jpg" style="height:280px; width:230px;">
+													</div>
+												</div>
+											</div>
+											<div class="item">
+													<div class="carousel-col">
+														<div class="block img-responsive">
+																<img src="img/carous_6.jpg" style="height:280px; width:230px;">
+														</div>
+													</div>
+												</div>
+									</div>
+					
+									<!-- Controls -->
+									<div class="left carousel-control">
+										<a href="#carousel" role="button" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+									</div>
+									<div class="right carousel-control">
+										<a href="#carousel" role="button" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+					
+							</div>
+						</div>
+						<div class="row" style="margin-top:50px;">
+							<div class="col-md-6">
+								<h3 style="position:relative;left:400px;">Hotel in Kolkata</h3>
+								<p style="position:relative;left:465px;">Top best forever</p>
+							</div>
+							<div class="col-md-6" style="border-left:4px solid red">
+								<p>We presents top hotel for you</p>
+								<hr style="border:1px solid pink;">
+								<button style="position: relative;top:-10px;right:320px;" class="explore_me" value="Explore more"> Explore more</button>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 50px;">
+								<div class="col-xs-11 col-md-10 col-centered">
+						
+									<div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+										<div class="carousel-inner">
+											<div class="item active">
+												<div class="carousel-col">
+													
+													<div class="block img-responsive">
+															<img src="img/carous_1.jpg" style="height:280px; width:230px;">
+															
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="carousel-col">
+													<div class="block img-responsive">
+															<img src="img/carous_2.jpg" style="height:280px; width:230px;">
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="carousel-col">
+													<div class="block img-responsive">
+															<img src="img/carous_3.jpg" style="height:280px; width:230px;">
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="carousel-col">
+													<div class="block img-responsive">
+															<img src="img/carous_4.jpg" style="height:280px; width:230px;">
+													</div>
+												</div>
+											</div>
+											<div class="item">
+													<div class="carousel-col">
+														<div class="block img-responsive">
+																<img src="img/carous_5.jpg" style="height:280px; width:230px;">
+														</div>
+													</div>
+												</div>
+												<div class="item">
+														<div class="carousel-col">
+															<div class="block img-responsive">
+																	<img src="img/carous_6.jpg" style="height:280px; width:230px;">
+															</div>
+														</div>
+													</div>
+										</div>
+						
+										<!-- Controls -->
+										<div class="left carousel-control">
+											<a href="#carousel" role="button" data-slide="prev">
+												<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+										</div>
+										<div class="right carousel-control">
+											<a href="#carousel" role="button" data-slide="next">
+												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+									</div>
+						
+								</div>
+							</div>
+							<div class="row" id="footer">
+								<div class="col-md-6">
+									<h2 style="margin:20px 0 0 10px;">Tripupp</h2><br>
+									<h3 style="margin: 10px 0 0 50px;">Follow On</h3>
+									<i style="margin: 10px 2px 0 50px;color:red;font-size:20px;" class="fab fa-twitter-square"></i>Tripupp/twitter
+									<i style="margin: 10px 2px 0 50px;color:red;font-size:20px;" class="fab fa-facebook-square"></i>Tripupp/facebook
+									<i style="margin: 10px 2px 0 50px;color:red;font-size:20px;" class="fab fa-instagram"></i>Tripupp/instagram
+									<div style="background: rgb(69, 164, 228); width:25%;text-align:center;border-radius:3px;position:relative;top:30px;left:40px;">
+										<h3>Contact Us</h3>
+									</div>
+									<p style="margin:-8px 0 0 250px;font-size:18px;">+91 8746592010</p>
+									<p style="margin:0 0 0 250px; color:lightblue">10AM - 7PM (Mondya to Friday)</p><br>
+									<p style="font-size:18px;">Safe n Secure</p>
+									<p style="margin:-10px 0 0 0; color:lightblue">Secure payment gateway</p>
+									<p style="margin:-48px 0 0 250px;font-size:18px;">Moneyback Guarantee</p>
+									<p style="margin:0 0 0 250px; color:lightblue">Book with Confidence</p>
+								</div>
+								<div class="col-md-6">
+										<table class="table">
+												<thead>
+												  <tr>
+													<th scope="col" style="font-size:20px;">Company</th>
+													<th scope="col" style="font-size:20px;">Explore</th>
+													<th scope="col" style="font-size:20px;">packages</th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<td>About Us</td>
+													<td>Itineraries</td>
+													<td>Luxury Holidays</td>
+												  </tr>
+												  <tr>
+													<td>Team</td>
+													<td>Travelouges</td>
+													<td>Sightseeing</td>
+												  </tr>
+												  <tr>
+													<td>Investors</td>
+													<td>Honeymoons</td>
+													<td>Weekends</td>
+												  </tr>
+												  <tr>
+														<td>Carrers</td>
+														<td>Collections</td>
+														<td>Budget Trips</td>
+													  </tr>
+												</tbody>
+											  </table>
+											  <h2>NewsLetter</h2>
+											  <form action="" style="float: left;width:70%;">
+												  <div class="form-group">
+													<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+													<i class="fas fa-play" style="float:right;position:relative;left:36px;font-size:33px;top:-35px; color:pink"></i>
+												</div>
+												</form>
+								</div>
+							</div>
+			</div>
+			  <style media="screen">
+				  	table{
+						  margin-top: 20px;
+					  }
+					.table>tbody>tr>td{
+						border-top:none;
+					}
+					.table>thead>tr>th{
+						border-bottom:none;
+					}
+				  #carous{
+					  margin: 20px 0 0 100px;
+				  }
+				  .col-centered {
+					float: none;
+					margin: 0 auto;
+					
+				}
+				
+				.carousel-control { 
+					width: 8%;
+					width: 0px;
+				}
+				.carousel-control.left,
+				.carousel-control.right { 
+					margin-right: 40px;
+					margin-left: 32px; 
+					background-image: none;
+					opacity: 1;
+				}
+				.carousel-control > a > span {
+					color: white;
+					  font-size: 29px !important;
+					  
+				}
+				
+				.carousel-col { 
+					position: relative; 
+					min-height: 1px; 
+					padding: 5px; 
+					float: left;
+					
+				 }
+				
+				 .active > div { display:none; }
+				 .active > div:first-child { display:block; }
+				
+				/*xs*/
+				@media (max-width: 767px) {
+				  .carousel-inner .active.left { left: -50%; }
+				  .carousel-inner .active.right { left: 50%; }
+					.carousel-inner .next        { left:  50%; }
+					.carousel-inner .prev		     { left: -50%; }
+				  .carousel-col                { width: 50%; }
+					.active > div:first-child + div { display:block; }
+				}
+				
+				/*sm*/
+				@media (min-width: 768px) and (max-width: 991px) {
+				  .carousel-inner .active.left { left: -50%; }
+				  .carousel-inner .active.right { left: 50%; }
+					.carousel-inner .next        { left:  50%; }
+					.carousel-inner .prev		     { left: -50%; }
+				  .carousel-col                { width: 50%; }
+					.active > div:first-child + div { display:block; }
+				}
+				
+				/*md*/
+				@media (min-width: 992px) and (max-width: 1199px) {
+				  .carousel-inner .active.left { left: -33%; }
+				  .carousel-inner .active.right { left: 33%; }
+					.carousel-inner .next        { left:  33%; }
+					.carousel-inner .prev		     { left: -33%; }
+				  .carousel-col                { width: 33%; }
+					.active > div:first-child + div { display:block; }
+				  .active > div:first-child + div + div { display:block; }
+				}
+				
+				/*lg*/
+				@media (min-width: 1200px) {
+				  .carousel-inner .active.left { left: -25%; }
+				  .carousel-inner .active.right{ left:  25%; }
+					.carousel-inner .next        { left:  25%; }
+					.carousel-inner .prev		     { left: -25%; }
+				  .carousel-col                { width: 25%; }
+					.active > div:first-child + div { display:block; }
+				  .active > div:first-child + div + div { display:block; }
+					.active > div:first-child + div + div + div { display:block; }
+				}
+				
+				.block {
+					width: 306px;
+					height: 230px;
+				}
+				
+				.red {background: red;}
+				
+				.blue {background: blue;}
+				
+				.green {background: green;}
+				
+				.yellow {background: yellow;}
+				  
+				  
+				 
+			  </style>
+			  <script type="text/javascript">
+				$('.carousel[data-type="multi"] .item').each(function() {
+					var next = $(this).next();
+					if (!next.length) {
+						next = $(this).siblings(':first');
+					}
+					next.children(':first-child').clone().appendTo($(this));
+				
+					for (var i = 0; i < 2; i++) {
+						next = next.next();
+						if (!next.length) {
+							next = $(this).siblings(':first');
+						}
+				
+						next.children(':first-child').clone().appendTo($(this));
+					}
+				});
+			  </script>
+	</section>
+</body>
+</html>
